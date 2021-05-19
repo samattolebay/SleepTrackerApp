@@ -23,8 +23,8 @@ import java.lang.IllegalArgumentException
 
 @Suppress("UNCHECKED_CAST")
 class SleepQualityViewModelFactory(
-        private val sleepNightKey: Long,
-        private val dataSource: SleepDatabaseDao
+    private val sleepNightKey: Long,
+    private val dataSource: SleepDatabaseDao
 ) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(SleepQualityViewModel::class.java)) {
